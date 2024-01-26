@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,2body0&family=Outfit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit',sans-serif;
+}
+
+body{
+    height: 100vh;
+    margin-left: 80px;
+}
+
+nav.menu-lateral{ 
+    width: 80px;
+    height: 100%;
+    background-color: #3d3e47;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #3c48b1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;    
+}
+
+ul{
+    height: 80%;
+    list-style-type: none;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+ul li.item-menu{
+    transition: .4s;
+}
+
+ul li.item-menu:hover{
+    background: #3c48b1;
+}
+
+ul li.ativo{
+    background-color: #3c48b1;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 8px;
+}
+
+.menu-lateral .animated-text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .menu-lateral.expandido .animated-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+/*Estudo vue*/
+
+.estudoVue{
+    margin: 10%;
+    border: 3px solid #3c48b1; 
+    border-radius: 10px; 
+
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente (em coluna) */
+    align-items: center;
+}
+
+.input-aumentado {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.botao{
+background-color: #3498db;
+color: #ffffff;
+padding: 10px 16px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+margin-left: 7px;
+cursor: pointer;
+}
+p {
+    display: block;
+    margin-top: 10px;
+}
+
+.cabecalho{
+    background-color: #3498db;
+    color: white;
+    margin: 0;
+    padding: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#app-form{
+    margin: 20px 100px;
+    display: block;
+}
+
+#nome{
+    margin-top: 20px;
+}
+
+  
